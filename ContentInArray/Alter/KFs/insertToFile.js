@@ -13,25 +13,29 @@ const StartFunc = ({ inKey, inValue, inFileName }) => {
   try {
     if (!fs.existsSync(filePath)) {
       LocalReturnObject.KReason = `File ${LocalFileName}.json does not exist in ${CommonDataPath} folder.`;
-      console.warn(LocalReturnObject.KReason);
       return LocalReturnObject;
     }
 
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-    const LocalFind = data.find(e => e["AddOnService"] === inKey);  // Changed this line
+    const LocalFind = data.find(obj => Object.values(obj).includes(inKey));
 
     if (!LocalFind) {
-      LocalReturnObject.KReason = `Value '${inKey}' not present to alter in 'AddOnService'.`;
+      LocalReturnObject.KReason = `Value '${inKey}' not found in any object to alter.`;
       return LocalReturnObject;
     }
 
-    LocalFind["AddOnService"] = inValue;  // Update value
+    for (const prop in LocalFind) {
+      if (LocalFind[prop] === inKey) {
+        LocalFind[prop] = inValue;
+        break;
+      }
+    }
 
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
 
     LocalReturnObject.KTF = true;
-    LocalReturnObject.JsonData = `Data altered successfully`;
+    LocalReturnObject.JsonData = "Data altered successfully";
   } catch (err) {
     LocalReturnObject.KReason = `Error occurred: ${err.message}`;
     console.error("Error:", err);
