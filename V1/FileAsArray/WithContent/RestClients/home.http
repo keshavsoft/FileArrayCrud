@@ -1,0 +1,9 @@
+POST http://localhost:3000/V1/FileAsArray/WithContent/Tasks3
+Content-Type: application/json
+
+[
+    {
+        "id": 1,
+        "name": "Task1"
+    }
+]
