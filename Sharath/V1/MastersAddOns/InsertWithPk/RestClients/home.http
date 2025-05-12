@@ -1,0 +1,7 @@
+POST http://localhost:3000/Sharath/V1/MastersAddOns/InsertWithPk
+Content-Type: application/json
+
+{
+  "Name":"Sharath",
+  "Mobile":9676673574
+}
