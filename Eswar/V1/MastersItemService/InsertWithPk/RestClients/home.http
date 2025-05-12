@@ -1,0 +1,7 @@
+POST http://localhost:3000/Eswar/V1/MastersItemService/InsertWithPk
+Content-Type: application/json
+
+{
+  "Name":"Keshav1",
+  "Mobile":9848163021
+}
