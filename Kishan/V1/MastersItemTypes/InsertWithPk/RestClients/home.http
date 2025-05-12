@@ -1,0 +1,7 @@
+POST http://localhost:3000/Kishan/V1/MastersItemTypes/InsertWithPk
+Content-Type: application/json
+
+{
+  "Name":"Keshav1",
+  "Mobile":9848163021
+}
