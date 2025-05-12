@@ -2,6 +2,7 @@ import express from 'express';
 const app = express()
 const port = 3000;
 
+import { router as routerFromvenu } from "./venu/routes.js";
 import { router as routerFromFileAsArray } from "./FileAsArray/routes.js";
 import { router as routerFromContentInArray } from "./ContentInArray/routes.js";
 
@@ -12,4 +13,6 @@ app.use('/ContentInArray', routerFromContentInArray);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
+app.use("/venu", routerFromvenu);
+
 });
