@@ -7,7 +7,7 @@ import { router as routerFromContentInArray } from "./ContentInArray/routes.js";
 import { router as routerFromV1 } from "./V1/routes.js";
 import { router as routerFromV3 } from "./V3/routes.js";
 
-app.use(express.static('public'));
+app.use(express.static('Public_Sharath'));
 
 app.use('/FileAsArray', routerFromFileAsArray);
 app.use('/ContentInArray', routerFromContentInArray);
