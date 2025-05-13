@@ -9,7 +9,7 @@ let StartFunc = async ({ inResponse }) => {
         Status200({ inResponse: jVarLocalSavedPk });
     };
 
-    if (jVarLocalResponse.status === 500) {
+    if (jVarLocalResponse.status === 409) {
         let jVarLocalSavedPk = await jVarLocalResponse.text();
         Status500({ inResponse: jVarLocalSavedPk });
     };
