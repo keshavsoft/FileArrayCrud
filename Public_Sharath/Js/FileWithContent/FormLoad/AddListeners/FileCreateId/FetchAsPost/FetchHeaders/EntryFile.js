@@ -25,7 +25,7 @@ function jFLocalserializeFormData(form) {
         }
     }
 
-    return serializedData;
+    return [serializedData];
 };
 
 export { StartFunc }
