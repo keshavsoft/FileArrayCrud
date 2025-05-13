@@ -3,6 +3,8 @@ import {
 } from '../Repos/entryFile.js';
 
 let PostFunc = (req, res) => {
+    console.log("aaaaa");
+    
     const LocalFileName = req.params.FileName;
     const LocalBody = req.body;
 

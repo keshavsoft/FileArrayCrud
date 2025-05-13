@@ -1,9 +1,9 @@
-POST http://localhost:3000/FileAsArray/WithContent/Tasks3
+POST http://localhost:3000/FileAsArray/WithContent/abcd
 Content-Type: application/json
 
 [
     {
-        "id": 1,
-        "name": "Task1"
+        "Name": "asad",
+        "Mobile": "9676673574"
     }
 ]
