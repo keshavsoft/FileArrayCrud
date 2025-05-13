@@ -6,13 +6,16 @@ import { router as routerFromFileAsArray } from "./FileAsArray/routes.js";
 import { router as routerFromContentInArray } from "./ContentInArray/routes.js";
 import { router as routerFromV1 } from "./V1/routes.js";
 import { router as routerFromV3 } from "./V3/routes.js";
+import { router as routerFromLogin } from "./Login/routes.js";
+import { StartFunc as routerFromMiddleWares } from "./MiddleWares/entryFile.js";
 
 app.use(express.static('Public_Sharath'));
 
-app.use('/FileAsArray', routerFromFileAsArray);
+app.use('/FileAsArray', routerFromMiddleWares, routerFromFileAsArray);
 app.use('/ContentInArray', routerFromContentInArray);
 app.use('/V1', routerFromV1);
 app.use('/V3', routerFromV3);
+app.use('/Login', routerFromLogin);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

@@ -1,0 +1,9 @@
+###Get for as is data
+POST http://localhost:3000/Login/CreateToken
+Content-Type: application/json
+
+{
+"Secret": "9848163021"
+}
+
+
