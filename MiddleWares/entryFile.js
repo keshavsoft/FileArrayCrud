@@ -2,7 +2,7 @@ import { StartFunc as StartFuncValidateToken } from "../JWT/verify.js";
 
 let StartFunc = (req, res, next) => {
 
-    let localClientToken = req.cookies.KSToken;
+    let localClientToken = req.cookies?.KSToken;
 
     let localResult = StartFuncValidateToken({ inToken: localClientToken });
 
