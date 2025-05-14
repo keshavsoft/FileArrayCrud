@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncShowOnDom } from "./ShowOnDom.js";
+import { StartFunc as StartFuncShowOnDom } from "./showOnDom.js";
 import { StartFunc as StartFuncFormLoad } from "./FormLoad/entryFile.js";
 
 const StartFunc = () => {

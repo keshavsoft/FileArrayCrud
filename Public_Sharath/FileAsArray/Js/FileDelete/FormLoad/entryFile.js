@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncAddListeners } from "./AddListeners/StartFunc.js";
+import { StartFunc as StartFuncAddListeners } from "./AddListeners/startFunc.js";
 
 const StartFunc = () => {
     StartFuncAddListeners();
