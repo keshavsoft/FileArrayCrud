@@ -1,7 +1,7 @@
-import { StartFunc as StartFuncFuncToRun } from "./ButtonClickFunc.js";
+import { StartFunc as StartFuncFuncToRun } from "./buttonClickFunc.js";
 
 let StartFunc = () => {
-   let jVarLocalRefreshBSTableId = document.getElementById("FileCreateId");
+    let jVarLocalRefreshBSTableId = document.getElementById("FileCreateId");
 
     if (jVarLocalRefreshBSTableId === null === false) {
         jVarLocalRefreshBSTableId.addEventListener("click", StartFuncFuncToRun);

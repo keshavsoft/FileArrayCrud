@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFileCreateId } from "./FileCreateId/EntryFile.js";
+import { StartFunc as StartFuncFileCreateId } from "./FileCreateId/entryFile.js";
 
 let StartFunc = () => {
     StartFuncFileCreateId();
