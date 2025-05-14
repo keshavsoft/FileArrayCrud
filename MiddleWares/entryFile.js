@@ -1,17 +1,21 @@
-import { StartFunc as StartFuncValidateToken } from "../JWT/verify.js";
+import express from 'express';
+import jwt from 'jsonwebtoken';
+import cookieParser from 'cookie-parser';
 
-let StartFunc = (req, res, next) => {
+const router = express.Router();
+router.use(cookieParser());
 
-    let localClientToken = req.cookies?.KSToken;
+router.use((req, res, next) => {
+    const token = req.cookies?.KSToken;
+    if (!token) return res.status(401).send({ message: 'Unauthorized' });
 
-    let localResult = StartFuncValidateToken({ inToken: localClientToken });
-
-    if (localResult === false) {
+    try {
+        req.user = jwt.verify(token, 'KeshavSoft');
+        next();
+    } catch (err) {
+        console.error("Token validation failed:", err.message);
         res.status(401).send({ message: 'Unauthorized' });
-        return;
-    };
+    }
+});
 
-    next();
-};
-
-export { StartFunc };
+export { router };
