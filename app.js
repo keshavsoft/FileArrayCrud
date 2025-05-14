@@ -7,7 +7,7 @@ import { router as routerFromContentInArray } from "./ContentInArray/routes.js";
 import { router as routerFromV1 } from "./V1/routes.js";
 import { router as routerFromV3 } from "./V3/routes.js";
 import { router as routerFromLogin } from "./Login/routes.js";
-import { StartFunc as routerFromMiddleWares } from "./MiddleWares/entryFile.js";
+import { router as routerFromMiddleWares } from "./MiddleWares/entryFile.js";
 
 app.use(express.static('Public_Sharath'));
 
