@@ -1,16 +1,9 @@
-import { StartFunc as StartFuncFetchHeaders } from "./FetchHeaders/entryFile.js";
 import getUrlJson from './getUrl.json' with {type: 'json'};
 
 let StartFunc = async () => {
-    let LocalroutePath = getUrlJson.GetEndPoint;
-
-    let jVarLocalFetchHeaders = StartFuncFetchHeaders();
-
+    let jVarLocalFetchUrl = getUrlJson.GetEndPoint;
     let jVarFileName = jFLocalFileName();
-
-    let jVarLocalFetchUrl = `${LocalroutePath}/${jVarFileName}`;
-
-    let response = await fetch(jVarLocalFetchUrl, jVarLocalFetchHeaders);
+    let response = await fetch(`${jVarLocalFetchUrl}/${jVarFileName}`);
 
     return await response;
 };
@@ -23,5 +16,6 @@ let jFLocalFileName = () => {
         return jVarLocalHtmlId.value.trim();
     };
 };
+
 export { StartFunc };
 

@@ -1,0 +1,8 @@
+POST http://localhost:3000/ContentInArray/AlterBody/S1/1
+Content-Type: application/json
+
+{
+    "Name": "S1",
+    "Mobile": "9182896380",
+    "FileName": "S1"
+}
