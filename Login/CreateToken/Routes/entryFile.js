@@ -1,10 +1,16 @@
 import express from 'express';
-var router = express.Router();
 import bodyparser from "body-parser";
 
-import { PostFunc } from '../Controllers/entryFile.js';
+var router = express.Router();
+
+import {
+    postFilterDataFromBodyFunc
+} from '../Controllers/entryFile.js';
+
+import { StartFunc as middlewarespostFilterDataFromBodyFunc } from "../Middlewares/entryFile.js";
+
 router.use(bodyparser.json());
 
-router.post('/', PostFunc);
+router.post('/', middlewarespostFilterDataFromBodyFunc, postFilterDataFromBodyFunc);
 
 export { router };
