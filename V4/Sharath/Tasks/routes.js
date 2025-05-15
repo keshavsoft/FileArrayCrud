@@ -1,0 +1,11 @@
+import express from 'express';
+
+const router = express.Router();
+
+import { router as routerFromShowAll } from "./ShowAll/routes.js";
+import { router as routerFromInsertWithPk } from "./InsertWithPk/routes.js";
+
+router.use("/ShowAll", routerFromShowAll);
+router.use("/InsertWithPk", routerFromInsertWithPk);
+
+export { router };
