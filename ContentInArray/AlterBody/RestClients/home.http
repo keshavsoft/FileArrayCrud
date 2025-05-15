@@ -1,4 +1,4 @@
-POST http://localhost:3000/ContentInArray/AlterBody/S1/1
+POST http://localhost:3000/ContentInArray/AlterBody/Tasks/1
 Content-Type: application/json
 
 {
