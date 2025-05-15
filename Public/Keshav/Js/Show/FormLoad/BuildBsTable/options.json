@@ -14,8 +14,8 @@
             "formatter": "jFLocalSerialColumn"
         },
         {
-            "field": "StudentName",
-            "title": "StudentName"
+            "field": "Name",
+            "title": "Name"
         },
         {
             "field": "Mobile",
