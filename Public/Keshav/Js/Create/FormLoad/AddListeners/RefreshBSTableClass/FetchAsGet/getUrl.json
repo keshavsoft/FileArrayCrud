@@ -1,3 +1,3 @@
 {
-    "PostEndPoint": "/ContentInArray/Insert/Tasks"
+    "PostEndPoint": "/ContentInArray/InsertWithPk/Tasks"
 }
