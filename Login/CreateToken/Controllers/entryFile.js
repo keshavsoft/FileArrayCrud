@@ -1,27 +1,22 @@
-import { StartFunc as StartFuncCreateToken } from "../../../JWT/create.js";
+import {
+    postDefaultFunc as postDefaultFuncFromRepo
+} from '../Repos/entryFile.js';
 
-let PostFunc = (req, res) => {
-    let LocalData = req.body;
-    let LocalSecret = LocalData.Secret;
+let postFilterDataFromBodyFunc = (req, res) => {
+    let LocalRequestBody = req.body;
+    let LocalCoumnSecret = LocalRequestBody.Secret;
 
-    let LocalFromValidate = LocalFuncValidate({ inSecret: LocalSecret });
+    let LocalFromRepo = postDefaultFuncFromRepo({ LocalCoumnSecret });
 
-    if (LocalFromValidate) {
-        let jVarLocalToken = StartFuncCreateToken({ inObject: 984863021 });
-
-        res.cookie('KSToken', jVarLocalToken, { maxAge: 900000, httpOnly: false });
-        res.end(jVarLocalToken);
-    }
-    else {
-        res.status(409);
-        res.end();
+    if (LocalFromRepo.KTF === false) {
+        res.status(409).send(LocalFromRepo.KReason);
+        return;
     };
+    res.cookie('KSToken', LocalFromRepo.SuccessText, { maxAge: 900000, httpOnly: false });
+    res.set('Content-Type', 'text/plain');
+    res.send(LocalFromRepo.SuccessText);
 };
 
-const LocalFuncValidate = ({ inSecret }) => {
-    if (inSecret == 9848163021) {
-        return true;
-    };
+export {
+    postFilterDataFromBodyFunc
 };
-
-export { PostFunc };
