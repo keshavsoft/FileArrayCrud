@@ -9,7 +9,7 @@ import { router as routerFromV3 } from "./V3/routes.js";
 import { router as routerFromLogin } from "./Login/routes.js";
 import { router as routerFromMiddleWares } from "./MiddleWares/entryFile.js";
 
-app.use(express.static('Public_Sharath'));
+app.use(express.static('Public'));
 
 app.use('/FileAsArray', routerFromMiddleWares, routerFromFileAsArray);
 app.use('/ContentInArray', routerFromContentInArray);
