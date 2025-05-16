@@ -1,0 +1,7 @@
+POST http://localhost:3000/V5/Sree/V2/Task/InsertWithPk
+Content-Type: application/json
+
+{
+  "Name":"Ram",
+  "Mobile":2222222222
+}
