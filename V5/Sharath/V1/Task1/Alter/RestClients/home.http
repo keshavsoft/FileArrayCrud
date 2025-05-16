@@ -1,0 +1,7 @@
+POST http://localhost:3000/V5/Sharath/V1/Task1/Alter/1
+Content-Type: application/json
+
+{
+    "Name": "Babu",
+    "Mobile": 9182896380
+}
