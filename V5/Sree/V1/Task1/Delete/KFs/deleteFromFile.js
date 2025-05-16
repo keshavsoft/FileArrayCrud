@@ -36,7 +36,7 @@ const StartFunc = ({ inKey }) => {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
 
     LocalReturnObject.KTF = true;
-    LocalReturnObject.JsonData = `${LocalFileName}.josn Data Deleted Successfully`
+    LocalReturnObject.JsonData = `key : ${inKey} Row Deleted Successfully`
   } catch (err) {
     LocalReturnObject.KReason = `Error occurred: ${err.message}`;
     console.error("Error:", err);
