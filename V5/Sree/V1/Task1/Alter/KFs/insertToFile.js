@@ -29,7 +29,7 @@ const StartFunc = ({ inPk, inBody }) => {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
 
     LocalReturnObject.KTF = true;
-    LocalReturnObject.JsonData = `Record with pk '${inPk}' updated successfully.`;
+    LocalReturnObject.JsonData = `Record updated successfully with pk :'${inPk}'.`;
   } catch (err) {
     LocalReturnObject.KReason = `Error: ${err.message}`;
     console.error("Error:", err);
