@@ -25,7 +25,7 @@ const StartFunc = ({ inRequestBody }) => {
         ...LocalinDataToInsert,
         pk: MaxPk,
         UuId: uuidv4(),
-        DateTime: new Date().toISOString() 
+        DateTime: new Date().toISOString()
       };
 
       data.push(LocalInsertData);
@@ -33,7 +33,7 @@ const StartFunc = ({ inRequestBody }) => {
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
 
       LocalReturnObject.KTF = true;
-      LocalReturnObject.JsonData = `Inserted Pk, UuId and DateTime into ${LocalFileName}.json successfully`;
+      LocalReturnObject.JsonData = `Inserted Pk:${MaxPk}, UuId and DateTime into ${LocalFileName}.json successfully`;
       return LocalReturnObject;
     } else {
       LocalReturnObject.KReason = `File ${LocalFileName}.json does not exist in ${CommonDataPath} folder.`;
@@ -51,7 +51,7 @@ const StartFunc = ({ inRequestBody }) => {
 function uuidv4() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
     var r = Math.random() * 16 | 0,
-        v = c === 'x' ? r : (r & 0x3 | 0x8);
+      v = c === 'x' ? r : (r & 0x3 | 0x8);
     return v.toString(16);
   });
 }
