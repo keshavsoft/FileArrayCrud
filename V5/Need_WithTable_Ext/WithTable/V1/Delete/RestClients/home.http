@@ -1,0 +1,1 @@
+DELETE http://localhost:3000/V5/Need_WithTable_Ext/WithTable/V1/Delete/{RowPk}

@@ -1,0 +1,7 @@
+POST http://localhost:3000/V5/Srivalli/V2/task/InsertWithPk
+Content-Type: application/json
+
+{
+  "Name":"Keshav1",
+  "Mobile":9848163021
+}
