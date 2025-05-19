@@ -1,0 +1,7 @@
+POST http://localhost:3000/V5/Sree/V1/Task1/Alter/1
+Content-Type: application/json
+
+{
+    "Name": "S1",
+    "Mobile": "8888888888"
+}
