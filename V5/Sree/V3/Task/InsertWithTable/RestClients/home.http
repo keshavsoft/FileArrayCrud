@@ -1,0 +1,7 @@
+POST http://localhost:3000/V5/Sree/V3/Task/InsertWithTable
+Content-Type: application/json
+
+{
+  "Name":"ssss",
+  "Mobile":88888888
+}
