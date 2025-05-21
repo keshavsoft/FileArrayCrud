@@ -2,8 +2,8 @@ import express from 'express';
 
 const router = express.Router();
 
-import { router as routerFromMastersAddOns } from "./MastersAddOns/routes.js";
+import { router as routerFromV1 } from "./V1/routes.js";
 
-router.use("/MastersAddOns", routerFromMastersAddOns);
+router.use("/V1", routerFromV1);
 
 export { router };

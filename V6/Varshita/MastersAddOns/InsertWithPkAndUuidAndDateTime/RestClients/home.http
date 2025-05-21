@@ -1,7 +1,0 @@
-POST http://localhost:3000/V6/Varshita/MastersAddOns/InsertWithPkAndUuidAndDateTime
-Content-Type: application/json
-
-{
-    "AddOnService": "OIL STAINS",
-    "AddOnRate": "150"
-  }
