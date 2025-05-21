@@ -1,0 +1,6 @@
+POST http://localhost:3000/Masters/MastersItemCategory/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+{
+  "CustomerName": "sharrr"    
+}

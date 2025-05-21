@@ -1,0 +1,8 @@
+POST http://localhost:3000/Masters/MastersItemTypes/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+{
+  "ItemType": "Mirror"
+   
+    
+}

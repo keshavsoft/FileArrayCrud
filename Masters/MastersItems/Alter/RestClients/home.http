@@ -1,0 +1,14 @@
+POST http://localhost:3000/Masters/MastersItems/Alter/5
+Content-Type: application/json
+
+{
+  "Category": "Men shirtssss",
+    "ItemType": "SILK SHIRT",
+    "Service": "DW",
+    "ItemName": "Men SILK SHIRT DW",
+    "Pcs": "1",
+    "DryWashRate": "80",
+    "UuId": 5,
+    "pk": 5,
+    "DateTime": "2025-01-06T06:50:12.598Z"
+}

@@ -1,0 +1,16 @@
+POST http://localhost:3000/Masters/MastersCustomers/Alter/2
+Content-Type: application/json
+
+{
+  "CustomerName": "Sharath",
+    "Mobile": "9676673574",
+    "DOB": "",
+    "GSTNumber": "Gst5566",
+    "City": "",
+    "Occupation": "",
+    "CompanyName": "",
+    "BranchName": "MVP",
+    "UuId": 2,
+    "pk": 2,
+    "DateTime": "2025-01-07T09:52:56.825Z"
+}

@@ -1,0 +1,65 @@
+POST http://localhost:3000/Masters/QrCodes/Alter/1
+Content-Type: application/json
+
+
+ {
+    "GenerateReference": {
+      "ReferncePk": "1"
+    },
+    "Category": " woMen",
+    "ItemName": "Men HAND KARCHIF CW",
+    "ItemType": "HAND KARCHIF",
+    "Rate": "20",
+    "Pcs": "5",
+    "Total": 850,
+    "location": "Vizag",
+    "DeliveryDateTime": "2025-02-14",
+    "ItemService": "CW",
+    "AddOnArray": [
+      {
+        "AddOnService": "OIL STAINS",
+        "AddOnRate": 150,
+        "AddOnItemSerial": null
+      }
+    ],
+    "BookingData": {
+      "CustomerData": {
+        "CustomerName": "Chandana",
+        "Mobile": "8499811895",
+        "DOB": "",
+        "GSTNumber": "",
+        "City": "",
+        "Occupation": "",
+        "CompanyName": "",
+        "BranchName": "NGGOS",
+        "UuId": 6,
+        "pk": 6,
+        "DateTime": "2025-01-17T05:51:39.729Z",
+        "CustomerMobile": "8499811895"
+      },
+      "OrderData": {
+        "BranchName": "KKD",
+        "Currentdateandtime": "2025-02-04T06:09:31.898Z"
+      },
+      "AddOnData": {},
+      "CheckOutData": {
+        "1": {
+          "RoundOff": 0,
+          "CashAmount": 1003,
+          "CardAmount": 0,
+          "UPIAmount": 0,
+          "DiscountPer": 0,
+          "GstData": {
+            "DiscountAmount": 0,
+            "CGST": 76.5,
+            "SGST": 76.5
+          }
+        }
+      }
+    },
+    "OrderNumber": 1,
+    "UuId": 1,
+    "pk": 1,
+    "DateTime": "2025-02-04T06:10:20.470Z"
+  
+}

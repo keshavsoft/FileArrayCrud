@@ -1,0 +1,7 @@
+POST http://localhost:3000/Masters/MastersItemService/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+{ 
+  "ItemService": "ameena"
+   
+}

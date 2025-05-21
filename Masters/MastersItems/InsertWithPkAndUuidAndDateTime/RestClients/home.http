@@ -1,0 +1,12 @@
+POST http://localhost:3000/Masters/MastersItems/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+{
+  "Category": "women t-shirt",
+    "ItemType": "SILK SHIRT",
+    "Service": "DW",
+    "ItemName": "Men SILK SHIRT DW",
+    "Pcs": "1",
+    "DryWashRate": "80"
+   
+}
