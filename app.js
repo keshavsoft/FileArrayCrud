@@ -2,6 +2,7 @@ import express from 'express';
 const app = express()
 const port = 3000;
 
+import { router as routerFromV6 } from "./V6/routes.js";
 import { router as routerFromFileAsArray } from "./FileAsArray/routes.js";
 import { router as routerFromContentInArray } from "./ContentInArray/routes.js";
 import { router as routerFromV1 } from "./V1/routes.js";
@@ -23,4 +24,6 @@ app.use("/V5", routerFromV5);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
+router.use("/V6", routerFromV6);
+
 });
