@@ -11,6 +11,7 @@ import { router as routerFromMiddleWares } from "./MiddleWares/entryFile.js";
 import { router as routerFromV4 } from "./V4/routes.js";
 import { router as routerFromV5 } from "./V5/routes.js";
 import { router as routerFromV6 } from "./V6/routes.js";
+import { router as routerFromMasters } from "./Masters/routes.js";
 
 app.use(express.static('Public'));
 
@@ -22,6 +23,7 @@ app.use('/Login', routerFromLogin);
 app.use("/V4", routerFromV4);
 app.use("/V5", routerFromV5);
 app.use("/V6", routerFromV6);
+app.use("/Masters", routerFromMasters);
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 
