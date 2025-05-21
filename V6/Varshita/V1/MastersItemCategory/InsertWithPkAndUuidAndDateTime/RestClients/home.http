@@ -1,0 +1,6 @@
+POST http://localhost:3000/V6/Varshita/V1/MastersItemCategory/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+ {
+    "CustomerName": "Sai Varshitha"
+  }

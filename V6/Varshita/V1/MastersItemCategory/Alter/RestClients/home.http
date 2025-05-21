@@ -1,0 +1,9 @@
+POST http://localhost:3000/V6/Varshita/V1/MastersItemCategory/Alter/4
+Content-Type: application/json
+
+ {
+    "CustomerName": "Varshitha Reddy",
+    "pk": 4,
+    "UuId": "40aea2ec-8340-4a81-8516-7b755b5fe43c",
+    "DateTime": "2025-05-21T10:38:40.215Z"
+  }

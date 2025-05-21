@@ -1,0 +1,9 @@
+POST http://localhost:3000/V6/Varshita/V1/MastersItemService/Alter/1
+Content-Type: application/json
+
+{
+    "ItemService": "DW itemsss",
+    "UuId": 1,
+    "pk": 1,
+    "DateTime": "2025-01-06T05:57:47.507Z"
+  }
