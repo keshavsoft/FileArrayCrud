@@ -1,0 +1,7 @@
+GET http://localhost:3000/V6/Varshita/V1/MastersCustomers/RowDataWithPk/{RowPk}
+
+router.use("/MastersItems", routerFromMastersItems);
+router.use("/MastersItemCategory", routerFromMastersItemCategory);
+
+import { router as routerFromMastersItems } from "./MastersItems/routes.js";
+import { router as routerFromMastersItemCategory } from "./MastersItemCategory/routes.js";

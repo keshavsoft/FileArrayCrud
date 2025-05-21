@@ -1,0 +1,14 @@
+POST http://localhost:3000/V6/Varshita/V1/MastersItems/Alter/7
+Content-Type: application/json
+
+{
+    "Category": "Mens",
+    "ItemType": "SILK SHIRT",
+    "Service": "CW",
+    "ItemName": "Men SILK SHIRT CW",
+    "Pcs": "1",
+    "DryWashRate": "250",
+    "UuId": 7,
+    "pk": 7,
+    "DateTime": "2025-01-06T06:55:41.127Z"
+  }

@@ -1,0 +1,11 @@
+POST http://localhost:3000/V6/Varshita/V1/MastersItems/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+{
+    "Category": "Men T-shirtssss",
+    "ItemType": "SILK SHIRT",
+    "Service": "DW",
+    "ItemName": "Men SILK T-SHIRT DW",
+    "Pcs": "7",
+    "DryWashRate": "80"
+  }

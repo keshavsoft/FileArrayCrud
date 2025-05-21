@@ -1,0 +1,9 @@
+POST http://localhost:3000/V6/Varshita/V1/MastersItemTypes/Alter/2
+Content-Type: application/json
+
+ {
+    "ItemType": "SILK SHIRTT",
+    "UuId": 2,
+    "pk": 2,
+    "DateTime": "2025-01-06T05:27:44.529Z"
+  }
