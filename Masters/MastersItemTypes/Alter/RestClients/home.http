@@ -1,0 +1,9 @@
+POST http://localhost:3000/Masters/MastersItemTypes/Alter/1
+Content-Type: application/json
+
+{
+  "ItemType": "SHIRT Colorss",
+    "UuId": 1,
+    "pk": 1,
+    "DateTime": "2025-01-05T16:46:31.978Z"
+}

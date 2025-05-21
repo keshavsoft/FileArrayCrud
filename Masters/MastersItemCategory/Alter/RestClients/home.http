@@ -1,0 +1,9 @@
+POST http://localhost:3000/Masters/MastersItemCategory/Alter/1
+Content-Type: application/json
+
+{
+    "CustomerName": "Sharathhh",
+    "pk": 1,
+    "UuId": "86621bbc-82f8-47fb-b0c0-7450453ce31f",
+    "DateTime": "2025-05-20T09:02:51.256Z"
+}

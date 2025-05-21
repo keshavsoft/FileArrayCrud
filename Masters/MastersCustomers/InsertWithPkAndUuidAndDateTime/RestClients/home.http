@@ -1,0 +1,14 @@
+POST http://localhost:3000/Masters/MastersCustomers/InsertWithPkAndUuidAndDateTime
+Content-Type: application/json
+
+{
+  "CustomerName": "Ameena",
+    "Mobile": "9676673574",
+    "DOB": "",
+    "GSTNumber": "Gst5566",
+    "City": "",
+    "Occupation": "",
+    "CompanyName": "",
+    "BranchName": "MVP"
+    
+}
