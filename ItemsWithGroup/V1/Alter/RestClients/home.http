@@ -1,0 +1,11 @@
+POST http://localhost:3000/ItemsWithGroup/V1/Alter/1
+Content-Type: application/json
+
+{
+    "ITEMNAME": "12*1.75 FRONT MAG WHEEL",
+    "ITEMCATEGORY": "Applicable",
+    "ITEMGROUP": "Tyres",
+    "pk": 1,
+    "GUID": "f6a6cd58-d214-4b2d-a1fb-cdd48240cb8c",
+    "DateTime": "2025-05-23T11:23:26.948Z"
+  }
